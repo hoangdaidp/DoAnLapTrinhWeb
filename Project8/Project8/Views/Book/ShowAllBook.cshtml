@@ -46,7 +46,19 @@
         @Html.PagedListPager(Model, page => Url.Action("ShowAllBook", new { page = page }))
     </div>
 </div>
+<!-- jsDeliver -->
+<script type="text/javascript" src="~/Content/Admin/jquery.lazy-master/plugins/.."></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
+
+<!-- cdnjs -->
+<!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>-->
+<script type="text/javascript">
+    $(function () {
+        $('.lazy').Lazy();
+    });
+</script>
 
 
 
